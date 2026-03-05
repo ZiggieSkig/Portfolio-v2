@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Проекты — Алексей Шквиря</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<header class="header">
+    <div class="header-inner">
+        <div class="logo">АШ</div>
+        <nav class="nav">
+            <a href="index.html" class="nav-link">Главная</a>
+            <a href="about.html" class="nav-link">О себе</a>
+            <a href="projects.html" class="nav-link active">Проекты</a>
+            <a href="contact.html" class="nav-link">Контакты</a>
+        </nav>
+        <button class="theme-btn" onclick="toggleTheme()" title="Сменить тему">☀</button>
+    </div>
+</header>
+
+<main>
+    <section class="page-hero">
+        <h1 class="page-title">Мои проекты</h1>
+        <p class="page-sub">То, что я создал и планирую создать</p>
+    </section>
+
+    <section class="projects-section">
+        <h2 class="section-title">Текущие проекты</h2>
+        <div class="projects-grid">
+
+            <div class="project-card">
+                <div class="project-img">
+                    <div class="project-placeholder"><i class="fa-solid fa-cart-shopping"></i></div>
+                </div>
+                <div class="project-info">
+                    <h3>Онлайн-магазин</h3>
+                    <p>Веб-сайт онлайн-магазина с полноценной работой корзины, оплаты, аккаунтов, отзывов, поиска и рекомендаций</p>
+                    <div class="project-tags">
+                        <span class="tag">HTML</span>
+                        <span class="tag">CSS</span>
+                        <span class="tag">JavaScript</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="btn-primary">Смотреть проект</a>
+                        <a href="https://github.com/ZiggieSkig/xleb" target="_blank" class="btn-secondary">GitHub</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-img">
+                    <div class="project-placeholder"><i class="fa-solid fa-briefcase"></i></div>
+                </div>
+                <div class="project-info">
+                    <h3>Сайт-портфолио</h3>
+                    <p>Личный сайт-портфолио для представления навыков, проектов и контактной информации. Поддержка тёмной и светлой темы</p>
+                    <div class="project-tags">
+                        <span class="tag">HTML</span>
+                        <span class="tag">CSS</span>
+                        <span class="tag">JavaScript</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="index.html" class="btn-primary">Смотреть проект</a>
+                        <a href="https://github.com/ZiggieSkig" target="_blank" class="btn-secondary">GitHub</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <h2 class="section-title" style="margin-top: 60px;">Будущие проекты</h2>
+        <div class="future-grid">
+            <div class="future-card">
+                <span class="future-icon"><i class="fa-solid fa-mobile-screen"></i></span>
+                <h3>Мобильное приложение</h3>
+                <p>Планирую разработать мобильное приложение для управления задачами</p>
+            </div>
+            <div class="future-card">
+                <span class="future-icon"><i class="fa-solid fa-gamepad"></i></span>
+                <h3>Инди-игра на C++</h3>
+                <p>Небольшая 2D игра, написанная на C++ с использованием библиотеки SDL2</p>
+            </div>
+            <div class="future-card">
+                <span class="future-icon"><i class="fa-solid fa-cube"></i></span>
+                <h3>3D-моделирование персонажа</h3>
+                <p>Разработка детализированной 3D-модели персонажа — от концепта до финальной модели с текстурами и риггингом</p>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="footer">
+    <p>© <span id="year"></span> ZiggieSkig</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

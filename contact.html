@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты — Алексей Шквиря</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<header class="header">
+    <div class="header-inner">
+        <div class="logo">АШ</div>
+        <nav class="nav">
+            <a href="index.html" class="nav-link">Главная</a>
+            <a href="about.html" class="nav-link">О себе</a>
+            <a href="projects.html" class="nav-link">Проекты</a>
+            <a href="contact.html" class="nav-link active">Контакты</a>
+        </nav>
+        <button class="theme-btn" onclick="toggleTheme()" title="Сменить тему">☀</button>
+    </div>
+</header>
+
+<main>
+    <section class="page-hero">
+        <h1 class="page-title">Контакты</h1>
+    </section>
+
+    <section class="contact-section">
+        <div class="contact-grid">
+
+            <div class="contact-form-wrap card">
+                <h2>Форма обратной связи</h2>
+                <form id="contactForm" onsubmit="sendForm(event)">
+                    <div class="form-group">
+                        <label for="name">Имя</label>
+                        <input type="text" id="name" name="name" placeholder="Ваше имя" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="@gmail.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Сообщение</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Ваше сообщение..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary" style="width:100%">Отправить</button>
+                    <p id="form-success" style="display:none; color:#64ffda; margin-top:10px; text-align:center;">Сообщение отправлено</p>
+                </form>
+            </div>
+
+            <div class="contact-info-wrap">
+                <div class="card contact-info">
+                    <h2>Контактная информация</h2>
+                    <ul class="contact-list">
+                        <li>
+                            <span class="contact-icon"><i class="fa-solid fa-envelope"></i></span>
+                            <div>
+                                <p class="contact-label">Email</p>
+                                <a href="mailto:akekseidi@gmail.com">akekseidi@gmail.com</a>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="contact-icon"><i class="fa-brands fa-instagram"></i></span>
+                            <div>
+                                <p class="contact-label">Instagram</p>
+                                <a href="https://instagram.com/ZiggieSkig" target="_blank">@ZiggieSkig</a>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="contact-icon"><i class="fa-brands fa-github"></i></span>
+                            <div>
+                                <p class="contact-label">GitHub</p>
+                                <a href="https://github.com/ZiggieSkig" target="_blank">ZiggieSkig</a>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="contact-icon"><i class="fa-brands fa-telegram"></i></span>
+                            <div>
+                                <p class="contact-label">Telegram</p>
+                                <a href="https://t.me/ZiggieSkig" target="_blank">@ZiggieSkig</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="card social-links">
+                    <h2>Соцсети</h2>
+                    <div class="social-grid">
+                        <a href="https://github.com/ZiggieSkig" target="_blank" class="social-btn">GitHub</a>
+                        <a href="https://instagram.com/ZiggieSkig" target="_blank" class="social-btn">Instagram</a>
+                        <a href="https://t.me/ZiggieSkig" target="_blank" class="social-btn">Telegram</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+</main>
+
+<footer class="footer">
+    <p>© <span id="year"></span> ZiggieSkig</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

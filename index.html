@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Алексей Шквиря — Портфолио</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<header class="header">
+    <div class="header-inner">
+        <div class="logo">АШ</div>
+        <nav class="nav">
+            <a href="index.html" class="nav-link active">Главная</a>
+            <a href="about.html" class="nav-link">О себе</a>
+            <a href="projects.html" class="nav-link">Проекты</a>
+            <a href="contact.html" class="nav-link">Контакты</a>
+        </nav>
+        <button class="theme-btn" onclick="toggleTheme()" title="Сменить тему">☀</button>
+    </div>
+</header>
+
+<main>
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <p class="hero-label">Привет, я</p>
+                <h1 class="hero-title">Алексей<br>Шквиря</h1>
+                <p class="hero-sub">Веб‑разработчик · C++ программист · 3D моделлер</p>
+                <p class="hero-desc">Создаю и изучаю современные технологии в сфере IT. Студент Торайгыров Университета, специальность Computer Science.</p>
+                <div class="hero-btns">
+                    <a href="projects.html" class="btn-primary">Мои проекты</a>
+                    <a href="contact.html" class="btn-secondary">Связаться</a>
+                </div>
+            </div>
+            <div class="hero-photo">
+                <div class="photo-frame">
+                    <img src="ava.jpg" alt="Алексей Шквиря" onerror="this.style.display='none'">
+                    <div class="photo-placeholder">АШ</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="quick-info">
+        <div class="info-grid">
+            <div class="info-card">
+                <span class="info-icon"><i class="fa-solid fa-user-graduate"></i></span>
+                <h3>Образование</h3>
+                <p>Торайгыров Университет<br>Computer Science</p>
+            </div>
+            <div class="info-card">
+                <span class="info-icon"><i class="fa-solid fa-earth-asia"></i></span>
+                <h3>Город</h3>
+                <p>Павлодар,<br>Казахстан</p>
+            </div>
+            <div class="info-card">
+                <span class="info-icon"><i class="fa-solid fa-cubes"></i></span>
+                <h3>Навыки</h3>
+                <p>HTML, CSS, JS,<br>C++, 3D-моделирование</p>
+            </div>
+            <div class="info-card">
+                <span class="info-icon"><i class="fa-solid fa-code"></i></span>
+                <h3>Цель</h3>
+                <p>Full-stack разработчик</p>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="footer">
+    <p>© <span id="year"></span> ZiggieSkig</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

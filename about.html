@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>О себе — Алексей Шквиря</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+    <div class="header-inner">
+        <div class="logo">АШ</div>
+        <nav class="nav">
+            <a href="index.html" class="nav-link">Главная</a>
+            <a href="about.html" class="nav-link active">О себе</a>
+            <a href="projects.html" class="nav-link">Проекты</a>
+            <a href="contact.html" class="nav-link">Контакты</a>
+        </nav>
+        <button class="theme-btn" onclick="toggleTheme()" title="Сменить тему">☀</button>
+    </div>
+</header>
+
+<main>
+    <section class="page-hero">
+        <h1 class="page-title">О себе</h1>
+        <p class="page-sub">Немного о том, кто я и чем занимаюсь</p>
+    </section>
+
+    <section class="about-section">
+        <div class="about-grid">
+            <div class="about-bio card">
+                <h2>Биография</h2>
+                <ul class="bio-list">
+                    <li><span class="bio-label">Имя</span><span>Алексей Шквиря</span></li>
+                    <li><span class="bio-label">Возраст</span><span>20 лет</span></li>
+                    <li><span class="bio-label">Город</span><span>Павлодар, Казахстан</span></li>
+                    <li><span class="bio-label">Университет</span><span>Торайгыров Университет</span></li>
+                    <li><span class="bio-label">Специальность</span><span>Computer Science</span></li>
+                </ul>
+            </div>
+
+            <div class="about-interests card">
+                <h2>Интересы</h2>
+                <div class="tags">
+                    <span class="tag">Веб-разработка</span>
+                    <span class="tag">C++ программирование</span>
+                    <span class="tag">3D-моделирование</span>
+                    <span class="tag">Дизайн интерфейсов</span>
+                    <span class="tag">Компьютерные игры</span>
+                    <span class="tag">Новые технологии</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="skills-section card">
+            <h2>Навыки</h2>
+            <div class="skills-grid">
+                <div class="skill-group">
+                    <h3>Технические</h3>
+                    <div class="skill-bars">
+                        <div class="skill-item">
+                            <div class="skill-info"><span>HTML</span><span>85%</span></div>
+                            <div class="skill-bar"><div class="skill-fill" style="width:85%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info"><span>CSS</span><span>80%</span></div>
+                            <div class="skill-bar"><div class="skill-fill" style="width:80%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info"><span>JavaScript</span><span>65%</span></div>
+                            <div class="skill-bar"><div class="skill-fill" style="width:65%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info"><span>C++</span><span>75%</span></div>
+                            <div class="skill-bar"><div class="skill-fill" style="width:75%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info"><span>3D-моделирование</span><span>60%</span></div>
+                            <div class="skill-bar"><div class="skill-fill" style="width:60%"></div></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-group">
+                    <h3>Личные качества</h3>
+                    <ul class="quality-list">
+                        <li>✔ Ответственность</li>
+                        <li>✔ Работа в команде</li>
+                        <li> Быстрое обучение</li>
+                ✔        <li>✔ Внимание к деталям</li>
+                        <li>✔ Инициативность</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="goals-section card">
+            <h2>Цели</h2>
+            <p>Моя профессиональная цель — стать Full-stack разработчиком. Я стремлюсь создавать качественные веб-приложения, которые решают реальные задачи пользователей. В ближайшее время планирую углубить знания в области React, Node.js и современных инструментов разработки</p>
+        </div>
+    </section>
+</main>
+
+<footer class="footer">
+    <p>© <span id="year"></span> ZiggieSkig</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
