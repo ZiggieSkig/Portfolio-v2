@@ -630,13 +630,87 @@ a:hover {
     font-size: 0.9em;
 }
 @media (max-width: 768px) {
-    .hero-title { font-size: 2.4em; }
-    .hero-content { flex-direction: column-reverse; text-align: center; gap: 32px; }
-    .hero-btns { justify-content: center; }
-    .hero-desc { max-width: 100%; }
-    .about-grid { grid-template-columns: 1fr; }
-    .skills-grid { grid-template-columns: 1fr; }
-    .contact-grid { grid-template-columns: 1fr; }
-    .nav-link { padding: 6px 10px; font-size: 0.85em; }
-    .page-title { font-size: 2em; }
+    .header-inner {
+        padding: 0 12px;
+        gap: 8px;
+    }
+    .nav {
+        gap: 2px;
+    }
+    .nav-link {
+        padding: 5px 8px;
+        font-size: 0.8em;
+    }
+
+    .hero {
+        padding: 40px 16px;
+    }
+    .hero-content {
+        flex-direction: column-reverse;
+        text-align: center;
+        gap: 24px;
+    }
+    .hero-title {
+        font-size: 2em;
+    }
+    .hero-sub {
+        font-size: 1em;
+    }
+    .hero-desc {
+        max-width: 100%;
+        font-size: 0.9em;
+    }
+    .hero-btns {
+        justify-content: center;
+    }
+    .photo-frame {
+        width: 160px;
+        height: 160px;
+    }
+    .info-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 12px;
+    }
+    .info-card {
+        padding: 16px 12px;
+    }
+    .about-grid {
+        grid-template-columns: 1fr;
+    }
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+    .about-section {
+        padding: 32px 16px;
+    }
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+    .future-grid {
+        grid-template-columns: 1fr;
+    }
+    .projects-section {
+        padding: 32px 16px;
+    }
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+    .contact-section {
+        padding: 32px 16px;
+    }
+    .social-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+    .page-hero {
+        padding: 40px 16px;
+    }
+    .page-title {
+        font-size: 1.8em;
+    }
+    .card {
+        padding: 20px 16px;
+    }
+    .section-title {
+        font-size: 1.3em;
+    }
 }
