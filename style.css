@@ -629,3 +629,14 @@ a:hover {
     color: var(--text2);
     font-size: 0.9em;
 }
+@media (max-width: 768px) {
+    .hero-title { font-size: 2.4em; }
+    .hero-content { flex-direction: column-reverse; text-align: center; gap: 32px; }
+    .hero-btns { justify-content: center; }
+    .hero-desc { max-width: 100%; }
+    .about-grid { grid-template-columns: 1fr; }
+    .skills-grid { grid-template-columns: 1fr; }
+    .contact-grid { grid-template-columns: 1fr; }
+    .nav-link { padding: 6px 10px; font-size: 0.85em; }
+    .page-title { font-size: 2em; }
+}
